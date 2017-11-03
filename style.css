@@ -1,0 +1,64 @@
+		body {
+			margin:20px;
+			background-color:lightblue;
+			font-family:verdana;
+			
+		}
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.column1 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 100%;
+			padding:20px;
+			margin:20px;
+		}
+		.column2 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 48%;
+			padding:1%;
+			margin:1%;
+			
+		}
+		.column3 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 30.33%;
+			padding:1%;
+			margin:1%;
+			
+		}
+		
+		.row:after {
+			
+			content: "";
+			display: table;
+			clear: both;
+		}
+		

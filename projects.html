@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main Page</title>
+		<meta charset="utf-8">
+		
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		a {
+			color:DodgerBlue;
+			padding:px;
+		}
+		
+		body {
+			margin:20px;
+			background-color:lightblue;
+			font-family:verdana;
+			
+		}
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.column1 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 98%;
+			padding:1%;
+			margin:1%;
+		}
+		.column2 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 48%;
+			padding:1%;
+			margin:1%;
+			
+		}
+		.column3 {
+			background-color: #f1f1f1;
+			float: left;
+			width: 31.33%;
+			padding:1%;
+			margin:1%;
+			
+		}
+		
+		.row:after {
+			
+			content: "";
+			display: table;
+			clear: both;
+		}
+		img {
+			margin-top:20px;
+			
+		}
+
+		
+		
+	</style>
+	<body>
+		<div class="header">
+			<h1>Henry's Site</h1>
+		</div>
+
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			
+			<a href="projects.html">Projects</a>
+			
+		</div>
+		<div class="row">
+			<div class="column1">
+				<h2>Projects</h2>
+				<p>This page contains all of the projects I work on that involve code, including projects for school as well as things I code in my free time.</p>
+			</div>
+			<div class="column2">
+				<h2>Cattack!</h2>
+				<p>Cattack is a simple game I made with a couple of friends centered around puzzles and cats</p>
+				<a href="https://www.openprocessing.org/sketch/432657" target="_blank"><img src="cattack.png" width="100%"></a>
+			</div>
+			<div class="column2" style="overflow:hidden;">
+				<!--<a href="practice2.html"><h2>Practice Page</h2></a>
+				<p>This is a practice page for class that worked on practicing the use of CSS to properly style HTML</p>
+				<embed src="test.html" width="100%">-->
+				<a href="test.html">
+				<img src="mario.gif" height="1000px;"width="100%"style="margin-bottom:-235px;">
+				<img src="pika.gif" height="200px;"width="40%"style="margin-top:-1200px;">
+				<img src="batman.gif" height="200px;"width="40%"style="margin-top:-100px;">
+				</a>
+				<hr>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

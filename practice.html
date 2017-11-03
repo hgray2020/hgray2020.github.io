@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	</head>
+	<style>
+		body {
+			font-family:verdana;
+			
+			background-color:rgb(250, 250, 255);
+		}
+		h1 {
+			color:red;
+			text-align:center;
+		}
+		img {
+			float:left;
+			margin-right:20px;
+		}
+		p {
+			margin-top:20px;
+			margin-bottom:35px;
+		}
+		a:visited {
+			color:blue;
+		}
+		h2 {
+			color:DodgerBlue;
+		}
+		ol.letter {
+			list-style-type:lower-alpha;
+		}
+		
+		
+		div.leftbox {
+			width:50%;
+			background:green;
+			box-sizing:border-box;
+			float:left;
+			border-bottom:5px navy solid;
+			border-top:5px navy solid;
+			border-left:10px navy solid;
+			border-right:10px navy solid;
+			
+		}
+		div.box a {
+			color:red;
+		}
+		div.box p {
+			margin-left:40px;
+			margin-right:40px;
+		}
+		div.rightbox {
+			border:10px red solid;
+		
+			box-sizing:border-box;	
+			width:50%;
+			background:orange;
+			float:left;
+			border-left:10px red solid;
+			border-right:10px red solid;
+			border-top:5px red solid;
+			border-bottom:5px red solid;
+		}	
+			
+			
+			
+		
+		<!--.box:after {
+			content: "";
+			display: table;
+			clear: both;
+		}-->
+		
+	</style>
+<body>
+	<h1>Centered, Red, Title Text</h2>
+	<img src="koala.jpg" width="30%">
+	<p>This is just normal paragraph text...the important thing is that it flows around that photo on the left. Something about lorem and ipsum.</p>
+	<p>This is another normal paragraph that is also flowing around the image on the left...this paragraph should finish before the images does (so that there is height left in the image and <a href="koala.jpg">have a link</a> in it.</p>
+	<p>Lorem ipsum dolor sit amet, dapibus pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. </p>
+	<div style="clear:both">
+	
+	</div>
+	<p>This is yet another normal paragraph but this one should only start after/below the image...it should be clear of the "flow around the image" part. Include <a href="koalasleep.jpg">a link</a> or <a href="koalaeat.jpg">two</a></p></p>
+	<h2>Not Centered, Blue, Slightly Smaller Heading/Section Title</h2>
+	<p>Next is a list...but with letters instead of numbers. Look up the CSS property <em>list-style-type</em> for help.</p>
+	<ol class="letter">
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+		<li>List Item 4</li>
+		
+	</ol>
+	<div class="box">
+		<div class="leftbox">
+			<p><a href="">Lorem</a> ipsum dolor sit amet, dapibus pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. Lorem consectetuer morbi augue erat tellus elementum, velit augue curae dolor felis ut, tellus semper, sed erat turpis dui non sociis vulputate. Volutpat lorem lacus aptent, pede vestibulum enim a eu imperdiet vestibulum, neque augue. Sit erat mauris. Ultrices conubia aenean nulla consequat lacus lorem, eu aliquam felis vel tellus ut pede, aenean erat hendrerit id dui massa magna, nulla at in inceptos ultricies aptent. Proin cubilia, ridiculus dolor habitasse nunc feugiat sed, duis viverra aliquam adipiscing porttitor diam nulla, nonummy sed dignissim mauris mollis integer risus, sapien nonummy class suspendisse. Leo ad luctus blandit pulvinar non. Pede libero adipiscing sociis, amet sed erat etiam, amet risus amet risus vel ipsum amet, risus sapien at ligula, vel fusce quisque pellentesque turpis ultricies rutrum. Tempor blandit consequat ullamcorper, amet massa platea condimentum interdum pretium, rhoncus nunc. Et dolor feugiat, dui dui purus arcu ut venenatis, urna venenatis egestas lorem etiam. Metus neque, ultricies in nibh dictum vitae auctor, lorem lorem, turpis justo.</p>
+			
+		</div>
+		<div class="rightbox">
+			<p>Lorem ipsum dolor sit amet, dapibus <a href="https://xkcd.com" target="_blank">pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. Lorem consectetuer morbi augue erat tellus elementum, velit augue curae dolor felis ut, tellus semper, sed erat turpis dui non sociis vulputate. Volutpat lorem lacus aptent, pede vestibulum enim a eu imperdiet vestibulum, neque augue. Sit erat mauris. Ultrices conubia aenean nulla consequat lacus lorem, eu aliquam felis vel tellus ut pede, aenean erat hendrerit id dui massa magna, nulla at in inceptos ultricies aptent. Proin cubilia, ridiculus dolor habitasse nunc feugiat sed, duis viverra aliquam adipiscing porttitor diam nulla, nonummy sed dignissim mauris mollis integer risus, sapien nonummy class suspendisse. Leo ad luctus blandit pulvinar non. Pede libero adipiscing sociis, amet sed erat etiam, amet risus amet risus vel ipsum amet, risus sapien at ligula, vel fusce quisque pellentesque turpis ultricies rutrum.</a> Tempor blandit consequat ullamcorper, amet massa platea condimentum interdum pretium, rhoncus nunc. Et dolor feugiat, dui dui purus arcu ut venenatis, urna venenatis egestas lorem etiam. Metus neque, ultricies in nibh dictum vitae auctor, lorem lorem, turpis justo.</p>
+			
+		</div>
+		
+	</div>
+	
+	
+</body>
+</html>
