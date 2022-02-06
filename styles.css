@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 48px;
     font-family: 'Garamond';
     color: #469FA2;
 }
@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-    color: #393FA1;
+    color: #436DB5;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 }
 
 .column1 {
-    background-color: var(--main-bg);
+    background: none;
     float: left;
     width: 98%;
     padding: 1%;
@@ -89,7 +89,7 @@ body {
 }
 
 .column2 {
-    background-color: var(--main-bg);
+    background: none;
     float: left;
     width: 48%;
     padding: 1%;
@@ -97,7 +97,7 @@ body {
 }
 
 .column3 {
-    background-color: var(--main-bg);
+    background: none;
     float: left;
     width: 31.33%;
     padding: 1%;
@@ -105,7 +105,7 @@ body {
 }
 
 .column {
-    background-color: var(--main-bg);
+    background: none;
     float: left;
     width: 82%;
     padding: 1%;
@@ -113,7 +113,7 @@ body {
 }
 
 .side {
-    background-color: var(--main-bg);
+    background: none;
     float: right;
     width: 16%;
     padding: 1%;
@@ -129,6 +129,6 @@ body {
 
 img {
     margin-top: 0px;
-    border: 3px solid #469FA2;
-    border-radius: 5%;
+    border: 2px solid #469FA2;
+    border-radius: 3%;
 }
