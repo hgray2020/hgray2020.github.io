@@ -1,0 +1,134 @@
+:root {
+    --main-bg: #0F2A38;
+    --text: #93A1A1;
+    --dark: #0A202D;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: "Trebuchet MS"
+}
+
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+h1 {
+    font-size: 60px;
+    font-family: 'Garamond';
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Garamond';
+    color: #469FA2;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: #469FA2;
+}
+
+a {
+    color: #558AD4;
+    padding: px;
+}
+
+a:hover {
+    color: #393FA1;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: verdana;
+    margin: 0px;
+}
+
+.header {
+    background-image: url('header2.jpg');
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #6C982E;
+}
+
+.topnav {
+    font-family: 'Garamond';
+    overflow: hidden;
+    background-color: #0A202D;
+    margin-bottom: 0.5%;
+}
+
+.topnav a {
+    font-family: 'Garamond';
+    float: left;
+    display: block;
+    color: var(--text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+.topnav a:hover {
+    background-color: #93A1A1;
+    color: var(--dark);
+}
+
+.column1 {
+    background-color: var(--main-bg);
+    float: left;
+    width: 98%;
+    padding: 1%;
+    margin: 0.5%;
+}
+
+.column2 {
+    background-color: var(--main-bg);
+    float: left;
+    width: 48%;
+    padding: 1%;
+    margin: 0.5%;
+}
+
+.column3 {
+    background-color: var(--main-bg);
+    float: left;
+    width: 31.33%;
+    padding: 1%;
+    margin: 0.5%;
+}
+
+.column {
+    background-color: var(--main-bg);
+    float: left;
+    width: 82%;
+    padding: 1%;
+    margin: 0.5%
+}
+
+.side {
+    background-color: var(--main-bg);
+    float: right;
+    width: 16%;
+    padding: 1%;
+    margin: 0.5%;
+    margin-left: 0%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    margin-top: 0px;
+    border: 3px solid #469FA2;
+    border-radius: 5%;
+}
