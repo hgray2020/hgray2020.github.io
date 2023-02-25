@@ -104,6 +104,14 @@ body {
     margin: 0.5%;
 }
 
+.column23 {
+    background: none;
+    float: left;
+    width: 64.66%;
+    padding: 1%;
+    margin: 0.5%;
+}
+
 .column {
     background: none;
     float: left;
@@ -129,6 +137,12 @@ body {
 }
 
 img {
+    margin-top: 0px;
+    border: 2px solid #469FA2;
+    border-radius: 3%;
+}
+
+video {
     margin-top: 0px;
     border: 2px solid #469FA2;
     border-radius: 3%;

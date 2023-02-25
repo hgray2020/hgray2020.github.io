@@ -17,7 +17,7 @@
         <a href="#course">Coursework</a>
         <a href="#scripps">SIO</a>
         <a href="#video">Video Games</a>
-        <a href="services.html">Robotics</a>
+        <a href="#robotics">Robotics</a>
 
         <a href="mailto:henrygray0110@gmail.com" style="float:right">Email</a>
         <a href="https://www.linkedin.com/in/henry-gray-649a12219/" target="_" style="float:right">LinkedIn</a>
@@ -97,7 +97,7 @@
         </div>
     </div>
     <div class="row" id="video" style="background-image: linear-gradient(#112A4F, #0F2A38);">
-        <div class="column" id="course">
+        <div class="column">
             <h2>Video Game Development</h2>
             <p>
                 Developing video games was how I was introduced to programming and throughout the years I've put many hours into a fair few projects and I'm proud of many of them. None of them have been fully fleshed out, but each one taught me new techniques and technologies
@@ -127,6 +127,60 @@
 
         </div>
     </div>
+    <div class="row" style="background-image: linear-gradient(#112A4F, #0F2A38);">
+        <div class="column1">
+            <h3>Homecooked</h3>
+            <p>
+                Homecooked is an indie RPG-style game that I was introduced to a couple months into its development. This project was a ton of fun and taught me a lot about working with a team, not just of programmers, but of artists and directors as well. I got the
+                chance to design a lot of UIs for the game as well as the entire inventory and shop system. Additionally, I got to work on the enemies, getting their behavior to be both reasonable for gameplay and customizable for different types of enemies.
+                Another fun project was writing up demo minigames in Java before implementing the demos in GameMaker Studio. But perhaps my favorite feature was adding in a lighting and sound system. The lighting was designed so our artists could draw
+                overlays that would then be cast onto the character depending on where they were in the room. The sound system worked in a similar way, using a hidden tileset layer and the players' location to determine the sound the footsteps should
+                make. It was a lot of fun to work on all of these aspects of the game. The game is available on <a href="https://homecookeddev.itch.io/homecookeddemo" target="_">itch.io</a>
+            </p>
+
+        </div>
+
+    </div>
+    <div class="row" style="background-image: linear-gradient(#0F2A38, #112A4F);">
+        <div class="column23">
+
+            <img src="homecooked.jpg" style="width:100%;">
+        </div>
+        <div class="column3">
+
+            <img src="tempinv.png" style="width:100%; margin-bottom:9%; margin-top:6%">
+            <img src="shopbuy.png" style="width:100%;">
+
+        </div>
+
+    </div>
+    <div class="row" id="robotics" style="background-image: linear-gradient(#112A4F, #0F2A38);">
+        <div class="column1">
+            <h2>Robotics</h2>
+            <h3>High School Projects</h3>
+            <p>
+                My junior and senior year of high school (2018-2020) I got a lot of opportunities to do robotics work inside and outside of the classroom. In my robotics class junior year I got to work with Arduino hardware, Vex robots, and Leap Motion Controllers. My
+                project with the Leap Motion Controller was a lot of fun, as I programmed from scratch a ragdoll in Processing and then using the Leap, I was able to control multiple ragdolls in an environment using just my hands. Senior year I got to
+                work on a yearlong project and I began work on a drone. A lot of the first months was spent on researching and ordering components. Once I got everything I needed, I got to embark on a very long learning process as I now had to focus exclusively
+                on the hardware. Around February 2020 I was able to test the drone's propellors for the first time. A mishap led to having to spend some time designing safety precautions, and I then began to work on integrating the gyro sensor into my
+                code to stabilize takeoff. Unfortunately it was at this time COVID-19 shut down everything and I lost access to my drone. But I learned a ton in the process, especially on the design and hardware side.
+            </p>
+            <h3>Human Robot Interaction Lab</h3>
+            <p>In June 2022, I began working under Chris Thierauf at the Human Robot Interaction Lab at Tufts University. His research is in robot resiliency, both in making individual robots better at problem solving in unique scenarios as well as using
+                teams of robots to have robots help each other troubleshoot. My work at the lab has been focused on the Spot robot developed by Boston Dynamics. My first project was to increase the capabilities of the Spot by incorporating numerous sensors
+                and a LoRa radio device. The sensors were designed to increase both the robots perception of the environment and its ability to interact with people. I wrote several ROS packages for each, the largest of which included a library I wrote
+                in C to give the radios a P2P functionality. All these sensor packages were then bundled into a Docker image that gave the Spot full use of the "backpack." Next, I worked on developing a global planner in the established DIARC codebase.
+                This planner gave the Spot the ability to navigate the entire floor of the building the lab was in, including through doors (locked and unlocked, as it was able to remember door states and reroute.) Most recently, I have been working on
+                a local planner to increase the Spot's mobility as existing ROS default navigation stacks are insufficient for the Spot.
+            </p>
+            <video width="320" height="240" controls>
+                <source src="spot.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </div>
+
 
 </body>
 
