@@ -1,117 +1,102 @@
-<!doctype html>
-<html lang ="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	</head>
-	<style>
-		body {
-			font-family:verdana;
-			margin-left:200px;
-			margin-right:200px;
-			background-color:rgb(250, 250, 255);
-		}
-		h1 {
-			color:red;
-			text-align:center;
-		}
-		img {
-			float:left;
-			margin-right:20px;
-		}
-		p {
-			margin-top:20px;
-			margin-bottom:35px;
-		}
-		a:visited {
-			color:blue;
-		}
-		h2 {
-			color:DodgerBlue;
-		}
-		ol.letter {
-			list-style-type:lower-alpha;
-		}
-		
-		
-		div.leftbox {
-			width:50%;
-			background:green;
-			box-sizing:border-box;
-			float:left;
-			border-bottom:5px navy solid;
-			border-top:5px navy solid;
-			border-left:10px navy solid;
-			border-right:10px navy solid;
-			
-		}
-		div.box a {
-			color:red;
-		}
-		div.box p {
-			margin-left:40px;
-			margin-right:40px;
-		}
-		div.rightbox {
-			border:10px red solid;
-		
-			box-sizing:border-box;	
-			width:50%;
-			background:orange;
-			float:left;
-			border-left:10px red solid;
-			border-right:10px red solid;
-			border-top:5px red solid;
-			border-bottom:5px red solid;
-		}	
-			
-			
-			
-		
-		<!--.box:after {
-			content: "";
-			display: table;
-			clear: both;
-		}-->
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Filter Example</title>
+    <style>
+         :root {
+            --hue: 0;
+            --brightness: 1;
+            --contrast: 1;
+            --original-color: #002299;
+            /* Example color */
+        }
+        
+        .image-container img {
+            /* filter: invert(26%) sepia(98%) saturate(2054%) hue-rotate(99deg) brightness(101%) contrast(101%); */
+            filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(var(--hue)deg) brightness(var(--brightness)) contrast(var(--contrast));
+        }
+        
+        .color-display {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            background-color: var(--original-color);
+        }
+    </style>
+</head>
+
 <body>
-	<h1>Centered, Red, Title Text</h2>
-	<img src="koala.jpg" width="30%">
-	<p>This is just normal paragraph text...the important thing is that it flows around that photo on the left. Something about lorem and ipsum.</p>
-	<p>This is another normal paragraph that is also flowing around the image on the left...this paragraph should finish before the images does (so that there is height left in the image and <a href="koala.jpg">have a link</a> in it.</p>
-	<p>Lorem ipsum dolor sit amet, dapibus pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. </p>
-	<div style="clear:both">
-	
-	</div>
-	<p>This is yet another normal paragraph but this one should only start after/below the image...it should be clear of the "flow around the image" part. Include <a href="koalasleep.jpg">a link</a> or <a href="koalaeat.jpg">two</a></p></p>
-	<h2>Not Centered, Blue, Slightly Smaller Heading/Section Title</h2>
-	<p>Next is a list...but with letters instead of numbers. Look up the CSS property <em>list-style-type</em> for help.</p>
-	<ol class="letter">
-		<li>List Item 2</li>
-		<li>List Item 3</li>
-		<li>List Item 4</li>
-		
-	</ol>
-	<div class="box">
-		<div class="leftbox">
-			<p><a href="">Lorem</a> ipsum dolor sit amet, dapibus pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. Lorem consectetuer morbi augue erat tellus elementum, velit augue curae dolor felis ut, tellus semper, sed erat turpis dui non sociis vulputate. Volutpat lorem lacus aptent, pede vestibulum enim a eu imperdiet vestibulum, neque augue. Sit erat mauris. Ultrices conubia aenean nulla consequat lacus lorem, eu aliquam felis vel tellus ut pede, aenean erat hendrerit id dui massa magna, nulla at in inceptos ultricies aptent. Proin cubilia, ridiculus dolor habitasse nunc feugiat sed, duis viverra aliquam adipiscing porttitor diam nulla, nonummy sed dignissim mauris mollis integer risus, sapien nonummy class suspendisse. Leo ad luctus blandit pulvinar non. Pede libero adipiscing sociis, amet sed erat etiam, amet risus amet risus vel ipsum amet, risus sapien at ligula, vel fusce quisque pellentesque turpis ultricies rutrum. Tempor blandit consequat ullamcorper, amet massa platea condimentum interdum pretium, rhoncus nunc. Et dolor feugiat, dui dui purus arcu ut venenatis, urna venenatis egestas lorem etiam. Metus neque, ultricies in nibh dictum vitae auctor, lorem lorem, turpis justo.</p>
-			
-		</div>
-		<div class="rightbox">
-			<p>Lorem ipsum dolor sit amet, dapibus <a href="https://xkcd.com" target="_blank">pretium amet sapien elit libero velit, velit vel et, gravida vel nec suspendisse mi, integer ipsum nibh in, nulla accumsan. Neque dolor feugiat. Lorem consectetuer morbi augue erat tellus elementum, velit augue curae dolor felis ut, tellus semper, sed erat turpis dui non sociis vulputate. Volutpat lorem lacus aptent, pede vestibulum enim a eu imperdiet vestibulum, neque augue. Sit erat mauris. Ultrices conubia aenean nulla consequat lacus lorem, eu aliquam felis vel tellus ut pede, aenean erat hendrerit id dui massa magna, nulla at in inceptos ultricies aptent. Proin cubilia, ridiculus dolor habitasse nunc feugiat sed, duis viverra aliquam adipiscing porttitor diam nulla, nonummy sed dignissim mauris mollis integer risus, sapien nonummy class suspendisse. Leo ad luctus blandit pulvinar non. Pede libero adipiscing sociis, amet sed erat etiam, amet risus amet risus vel ipsum amet, risus sapien at ligula, vel fusce quisque pellentesque turpis ultricies rutrum.</a> Tempor blandit consequat ullamcorper, amet massa platea condimentum interdum pretium, rhoncus nunc. Et dolor feugiat, dui dui purus arcu ut venenatis, urna venenatis egestas lorem etiam. Metus neque, ultricies in nibh dictum vitae auctor, lorem lorem, turpis justo.</p>
-			
-		</div>
-		
-	</div>
-	<br>
-	<div style="text-align:center;font-size:1.6em;">
-		
-		<a href="projects.html">Back</a>
-	</div>
-	<br>
-	<br>
-	
-	
+    <div class="color-display"></div>
+    <div class="image-container">
+        <img src="../Lift Tracker/lift-app/public/searchIcon.svg" alt="Example Image">
+    </div>
+
+    <script>
+        function getCssVariableValue(variableName) {
+            // Get the computed styles of the :root element
+            const rootStyles = getComputedStyle(document.documentElement);
+            // Retrieve the value of the custom property
+            return rootStyles.getPropertyValue(variableName).trim();
+        }
+
+        function hexToHsl(hex) {
+            // Convert hex to RGB
+            let r = parseInt(hex.substring(1, 3), 16) / 255;
+            let g = parseInt(hex.substring(3, 5), 16) / 255;
+            let b = parseInt(hex.substring(5, 7), 16) / 255;
+
+            // Find the min and max values of r, g, and b
+            let min = Math.min(r, g, b);
+            let max = Math.max(r, g, b);
+            let h, s, l = (min + max) / 2;
+
+            if (min === max) {
+                h = s = 0; // Achromatic
+            } else {
+                let d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+
+                h /= 6;
+            }
+
+            return {
+                h: Math.round(h * 360),
+                s: s,
+                l: l
+            };
+        }
+
+        function updateCssVariables(hexColor) {
+            let hsl = hexToHsl(hexColor);
+
+            document.documentElement.style.setProperty('--hue', hsl.h);
+            document.documentElement.style.setProperty('--brightness', hsl.l);
+            // Contrast can be approximated or set manually if needed
+            document.documentElement.style.setProperty('--contrast', 1); // Default value
+            console.log(hsl)
+        }
+
+        // Example color
+        let hexColor = getCssVariableValue('--original-color'); // Replace with your color
+        console.log(hexColor);
+        updateCssVariables(hexColor);
+    </script>
 </body>
+
 </html>

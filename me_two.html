@@ -1,9 +1,295 @@
 <html>
+
 <head>
-  <title>Cool Page Here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Me</title>
+    <style>
+         :root {
+            --contrast: 7;
+            --light: #f2f2ff;
+            --light-darker: hsl(from #f2f2ff h s calc(l - var(--contrast)));
+            --dark: rgb(from var(--light) calc(r - 100) calc(g - 100) b);
+            --dark-darker: hsl(from var(--dark) h s calc(l - var(--contrast)));
+        }
+        
+        html {
+            padding: 50px;
+        }
+        
+        td,
+        th {
+            border: 1px solid gray;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+        
+        h1,
+        h2 {
+            font-size: xx-large;
+            color: var(--dark);
+            margin-bottom: 30px;
+        }
+        
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+        
+        .list {
+            width: 100%;
+            border: var(--dark) solid 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .food-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .food-image {
+            background-image: url('images/burrito.jfif');
+            background-size: cover;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+        }
+        
+        .food-description {
+            max-width: 50%;
+        }
+        
+        th {
+            background-color: var(--dark);
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2ff;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        
+        .form-container {
+            width: 300px;
+            margin: 20px auto;
+        }
+        /* Form group to contain label and input */
+        
+        .form-element {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        /* Right align the label and add spacing */
+        
+        .form-element label {
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            line-height: 1.5;
+        }
+        /* Ensure inputs and select box fill available space */
+        
+        .form-element input,
+        .form-element select {
+            flex: 1;
+        }
+        
+        .submit-button {
+            width: 100%;
+            /* Full width of the form */
+            padding: 10px;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--dark-darker);
+            color: var(--light);
+        }
+        
+        .social-icons {
+            position: fixed;
+            top: 100px;
+            right: 35px;
+            display: flex;
+            gap: 50px;
+        }
+        
+        .social-icons a {
+            color: var(--dark);
+            font-size: 24px;
+            text-decoration: none;
+        }
+        
+        .social-icons a:hover {
+            color: var(--dark-darker);
+            /* Change color on hover */
+        }
+    </style>
 </head>
+
+
 <body>
-  <h1>Hello World!</h1>
-  This is my cool hello world page
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+    <h1>Henry Gray</h1>
+    <p>Last year for Thanksgiving Break I traveled to London with my cousin to meet my parents and his mom, my aunt. We did a bit of sightseeing, had a nice small Thanksgiving dinner, and just otherwise took a break from school.</p>
+    <div class="list">
+        <ul>
+            <li>A cat named Megatron</li>
+            <li>An orange cat named Fridge</li>
+            <li>A lizard named Toothless</li>
+        </ul>
+    </div>
+    <div>
+        <a href="https://www.acitronrestaurant.com/">My favorite restaurant</a> in the area is Acitron Cocina. They have unlimited chips and salsa, great drinks, and great food. It's somewhere I've been to with my friends several times as well as family
+        during grad week. It's also where my girlfriend and I had our first date, so I'd say it definitely has a good reason to be my favorite.
+    </div>
+    <div class="food-container">
+        <div class="food-image"></div>
+        <div class="food-description">
+            <p>My favorite food is a California burrito. In my opinion, it shouldn't have rice in it; it should have carne asada (or beans/veggies if you don't eat meat), pico de gallo, cheese, french fries and guacamole. With that combo, you have an unbeatable
+                burrito.
+            </p>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Book Name</th>
+            <th>Cover Image</th>
+            <th>Author</th>
+            <th>Summary</th>
+        </tr>
+        <tr>
+            <td>The Hobbit</td>
+            <td><img src="images/hobbit-cover.jfif"></td>
+            <td>J.R.R. Tolkien</td>
+            <td>Bilbo Baggins, a unassuming hobbit, goes on an epic adventure to reclaim the homeland of the Dwarves </td>
+        </tr>
+
+        <tr>
+            <td>Recursion</td>
+            <td><img src="images/recursion-cover.jfif"></td>
+            <td>Blake Crouch</td>
+            <td>A story about time, identity, and memory begins with an outbreak of False Memory Syndrome, where extreme deja vu drives the afflicted to suicide.</td>
+        </tr>
+        <tr>
+            <td>Children of Time</td>
+            <td><img src="images/cot-cover.jfif"></td>
+            <td>Adrien Tchaikovsky</td>
+            <td>A science fiction novel where humanity's quest to expand and colonize the cosmos results in millenia of hyper-evolved spiders to take over a terraformed planet in an experiment gone awry. </td>
+        </tr>
+
+        <td>Foundation</td>
+        <td><img src="images/foundation-cover.jfif"></td>
+        <td>Isaac Asimov</td>
+        <td>Foundation tells the story of pyschohistorian Hari Seldon's efforts to preserve galatic civilization after the collapse of the Galatic Empire</td>
+        </tr>
+    </table>
+    <div class="form-container"></div>
+    <form>
+        <div class="form-element">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+
+        <div class="form-element">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+
+        <div class="form-element">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <div class="form-element">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+				<option value="">Select State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NJ">New Jersey</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+                </select>
+        </div>
+        <div class="form-element">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+    </div>
 </body>
+
 </html>
